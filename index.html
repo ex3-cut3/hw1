@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name = "viewport">
+    <meta content = "ie=edge" http-equiv = "X-UA-Compatible">
+    <link href = "https://fonts.googleapis.com/css?family=Rubik:300,400,600,700" rel = "stylesheet">
+
+    <link href = "css/style.css" rel = "stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<header class = "header">
+    <img alt = "Logo" class = "logo" src = "img/logo.png">
+
+    <form action = "#" class = "search">
+        <input class = "search__input" placeholder = "Search..." type = "text">
+        <button class = "search__button">
+            <svg class = "search__icon">
+                <use xlink:href = "img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+        </button>
+        <button class = "search__button search__button-mic">
+            <svg class = "h-6 w-6 search__icon" fill = "none" stroke = "currentColor" stroke-width =
+                    "2"
+                 viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                <path d = "M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                      stroke-linecap = "round"
+                      stroke-linejoin = "round"/>
+            </svg>
+        </button>
+    </form>
+
+    <div class = "user-nav">
+        <div class = "user-nav__icon-box">
+            <svg class = "user-nav__nav_icon">
+                <use xlink:href = "img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class = "user-nav__notification">7</span>
+        </div>
+
+        <div class = "user-nav__user tooltip split">
+            <svg class = "h-6 w-6" fill = "none" stroke = "currentColor"
+                 stroke-width = "2" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                <path d = "M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap = "round"
+                      stroke-linejoin = "round"/>
+            </svg>
+
+            <div class = "tooltip__content tooltip_width-small">
+                <ul class = "tooltip__list">
+                    <li class = "tooltip__list-item">
+                        <svg class = "h-6 w-6" fill = "none" stroke = "currentColor"
+                             stroke-width = "2" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path d = "M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap = "round"
+                                  stroke-linejoin = "round"/>
+                        </svg>
+
+                        <span class = "tooltip__menu">
+                                  Account
+                            </span>
+                    </li>
+                    <li class = "tooltip__list-item">
+                        <svg class = "h-6 w-6" fill = "none" stroke = "currentColor"
+                             stroke-width = "2" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path d = "M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" stroke-linecap = "round"
+                                  stroke-linejoin = "round"/>
+                        </svg>
+                        <span class = "tooltip__menu">
+                                Text
+                            </span>
+                    </li>
+                    <li class = "tooltip__list-item">
+                        <svg class = "h-6 w-6" fill = "none" stroke = "currentColor"
+                             stroke-width = "2" viewBox = "0 0 24 24" xmlns = "http://www.w3.org/2000/svg">
+                            <path d = "M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" stroke-linecap = "round"
+                                  stroke-linejoin = "round"/>
+                        </svg>
+
+                        <span class = "tooltip__menu">
+                                  Logout
+                            </span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+<div class = "content">
+    <nav class = "sidebar">
+        <ul class = "side-nav">
+            <li class = "side-nav__item">
+                <a class = "side-nav__link" href = "#">
+                    <img alt = "side-nav__cat-preview" class = "side-nav__icon" src = "img/cat-preview.png">
+                    <span class = "side-nav__preview-name">First</span>
+                    <span class = "side-nav__preview-amount">5.3K</span>
+                </a>
+            </li>
+
+            <li class = "side-nav__item">
+                <a class = "side-nav__link" href = "#">
+                    <img alt = "side-nav__cat-preview" class = "side-nav__icon" src = "img/cat-preview.png">
+                    <span class = "side-nav__preview-name">Secondddddd</span>
+                    <span class = "side-nav__preview-amount">5.3K<span class = "side-nav__dot"></span>
+                </span>
+                </a>
+            </li>
+
+            <li class = "side-nav__item">
+                <a class = "side-nav__link" href = "#">
+                    <img alt = "side-nav__cat-preview" class = "side-nav__icon" src = "img/cat-preview.png">
+                    <span class = "side-nav__preview-name">Third</span>
+                    <span class = "side-nav__preview-amount">5.3K<span class = "side-nav__dot"></span></span>
+                </a>
+            </li>
+
+            <li class = "side-nav__item">
+                <a class = "side-nav__link" href = "#">
+                    <img alt = "side-nav__cat-preview" class = "side-nav__icon" src = "img/cat-preview.png">
+                    <span class = "side-nav__preview-name">Fourth</span>
+                    <span class = "side-nav__preview-amount">5.3K</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class = "legal">
+            <p class = "legal__text">
+                Join our friendly community!
+            </p>
+            <div class = "side-nav__svgs">
+                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" style="fill:currentColor;"/></svg>
+                <?xml version="1.0" ?><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                                           xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>.cls-1{fill:url(#radial-gradient);}.cls-2{fill:currentColor;}</style><radialGradient cx="-578.95" cy="-837.6" gradientTransform="translate(499.5 629.5) scale(0.75)" gradientUnits="userSpaceOnUse" id="radial-gradient" r="197.06"><stop offset="0" stop-color="#f9ed32"/><stop offset="0.36" stop-color="#ee2a7b"/><stop offset="0.44" stop-color="#d22a8a"/><stop offset="0.6" stop-color="#8b2ab2"/><stop offset="0.83" stop-color="#1b2af0"/><stop offset="0.88" stop-color="#002aff"/></radialGradient></defs><title/><g data-name="3-instagram" id="_3-instagram"><rect class="cls-1" height="64" rx="11.2" ry="11.2" transform="translate(64 64) rotate(180)" width="64"/><path class="cls-2" d="M44,56H20A12,12,0,0,1,8,44V20A12,12,0,0,1,20,8H44A12,12,0,0,1,56,20V44A12,12,0,0,1,44,56ZM20,12.8A7.21,7.21,0,0,0,12.8,20V44A7.21,7.21,0,0,0,20,51.2H44A7.21,7.21,0,0,0,51.2,44V20A7.21,7.21,0,0,0,44,12.8Z"/><path class="cls-2" d="M32,45.6A13.6,13.6,0,1,1,45.6,32,13.61,13.61,0,0,1,32,45.6Zm0-22.4A8.8,8.8,0,1,0,40.8,32,8.81,8.81,0,0,0,32,23.2Z"/><circle class="cls-2" cx="45.6" cy="19.2" r="2.4"/></g></svg>
+                <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+    .st1{fill:currentColor;}
+    .st2{fill:currentColor;}
+    .st3{fill:currentColor;}
+</style><g><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="256" x2="256" y1="0" y2="510.1322"><stop offset="0" style="stop-color:#41BCE7"/><stop offset="1" style="stop-color:#22A6DC"/></linearGradient><circle class="st0" cx="256" cy="256" r="256"/><g><path class="st1" d="M380.6,147.3l-45.7,230.5c0,0-6.4,16-24,8.3l-105.5-80.9L167,286.7l-64.6-21.7c0,0-9.9-3.5-10.9-11.2    c-1-7.7,11.2-11.8,11.2-11.8l256.8-100.7C359.5,141.2,380.6,131.9,380.6,147.3z"/><path class="st2" d="M197.2,375.2c0,0-3.1-0.3-6.9-12.4c-3.8-12.1-23.3-76.1-23.3-76.1l155.1-98.5c0,0,9-5.4,8.6,0    c0,0,1.6,1-3.2,5.4c-4.8,4.5-121.8,109.7-121.8,109.7"/><path class="st3" d="M245.8,336.2l-41.7,38.1c0,0-3.3,2.5-6.8,0.9l8-70.7"/></g></g></svg>
+            </div>
+        </div>
+    </nav>
+
+    <main class = "main">
+        <section class = "categories">
+            <span class = "categories__title categories__title--selected">All</span>
+            <span class = "categories__title">Food</span>
+            <span class = "categories__title">Music</span>
+            <span class = "categories__title">Humans</span>
+            <span class = "categories__title">Sports</span>
+            <span class = "categories__title">Activities</span>
+            <span class = "categories__title">Politics</span>
+            <span class = "categories__title">Food</span>
+            <span class = "categories__title">Music</span>
+            <span class = "categories__title">Humans</span>
+            <span class = "categories__title">Sports</span>
+            <span class = "categories__title">Activities</span>
+            <span class = "categories__title">Politics</span>
+            <span class = "categories__title">Food</span>
+            <span class = "categories__title">Music</span>
+            <span class = "categories__title">Humans</span>
+            <span class = "categories__title">Sports</span>
+            <span class = "categories__title">Activities</span>
+            <span class = "categories__title">Politics</span>
+        </section>
+
+        <section class = "videos">
+
+            <figure class = "videos__figure">
+                <span class = "videos__figure-live">LIVE</span>
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                            "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Secondddddddddddddddd</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">3.2k viewers</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class = "videos__figure">
+                <span class = "videos__figure-live">LIVE</span>
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                        "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Secondddddddddddddddd</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">3.2k viewers</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class = "videos__figure">
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                        "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Third</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">32:05</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class = "videos__figure">
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                        "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Too longggggggggggggggg</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">32:05</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class = "videos__figure">
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                        "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Too longggggggggggggggg</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">32:05</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class = "videos__figure">
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                        "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Too longggggggggggggggg</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">32:05</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class = "videos__figure">
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                        "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Too longggggggggggggggg</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">32:05</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+
+            <figure class = "videos__figure">
+                <picture class="videos__preview-pic-wrapper">
+                    <img alt = "video-preview" class =
+                        "videos__figure-preview" src = "img/video-preview.jpg">
+                </picture>
+                <div class="videos__figure-credentials">
+                    <img alt = "Author photo" class = "videos__figure-author-img" src = "img/cat-preview.png">
+                    <div class = "videos__figure-info">
+                        <div class = "videos__figure-name">Too longggggggggggggggg</div>
+                        <div class = "videos__figure-author">Aboba</div>
+                    </div>
+                    <span class = "videos__figure-time">32:05</span>
+                    <svg fill = "#000000" height = "192" viewBox = "0 0 256 256" width = "192"
+                         xmlns = "http://www.w3.org/2000/svg">
+                        <rect fill = "none" height = "256" width = "256"></rect>
+                        <circle cx = "128" cy = "128" r = "12"></circle>
+                        <circle cx = "128" cy = "64" r = "12"></circle>
+                        <circle cx = "128" cy = "192" r = "12"></circle>
+                    </svg>
+                </div>
+            </figure>
+        </section>
+
+        <footer class = "footer">
+            <p class = "footer__text">In honour of Pena Detroff, by <b>ex3cut3</b></p>
+        </footer>
+    </main>
+</div>
+
+</body>
+</html>
